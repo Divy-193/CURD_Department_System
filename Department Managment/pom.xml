@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.BufferDemo</groupId>
-	<artifactId>Springboot-Tutorial</artifactId>
+	<artifactId>Department Managment</artifactId>
 	<version>1.0.0</version>
 	<name>Springboot-Tutorial</name>
 	<description>Demo project for Spring Boot</description>
