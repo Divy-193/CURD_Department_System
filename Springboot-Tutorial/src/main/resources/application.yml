@@ -1,0 +1,56 @@
+server:
+  port: 8082
+
+
+spring:
+  profiles:
+    active: qa
+---
+spring:
+  config:
+    activate:
+      on-profile: qa
+  application:
+    name: Springboot-Tutorial
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Shiro.824
+    url: jdbc:mysql://localhost:3306/dcbapp-qa
+    username: root
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  application:
+    name: Springboot-Tutorial
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Shiro.824
+    url: jdbc:mysql://localhost:3306/dcbapp
+    username: root
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  application:
+    name: Springboot-Tutorial
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: Shiro.824
+    url: jdbc:mysql://localhost:3306/dcbapp-prod
+    username: root
+---
